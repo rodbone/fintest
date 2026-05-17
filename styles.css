@@ -1,0 +1,254 @@
+/* =========================================
+   fintest | Global Styles
+   ========================================= */
+
+:root {
+  --navy: #0F172A;
+  --charcoal: #334155;
+  --light-grey: #F3F4F6;
+  --white: #FFFFFF;
+  --teal: #0D9488;
+  --teal-hover: #0F766E;
+  --text-main: #1E293B;
+  --font-stack: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-stack);
+  color: var(--text-main);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  color: var(--navy);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--teal);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--navy);
+}
+
+/* --- Layout --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.bg-light {
+  background-color: var(--light-grey);
+}
+
+.bg-navy {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.bg-navy h2, .bg-navy h3 {
+  color: var(--white);
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--teal-hover);
+  color: var(--white);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--teal);
+  border: 2px solid var(--teal);
+}
+
+.btn-outline:hover {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+/* --- Header & Nav --- */
+header {
+  border-bottom: 1px solid #E2E8F0;
+  padding: 1rem 0;
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--teal);
+}
+
+/* --- Hero Section --- */
+.hero {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.hero h1 {
+  color: var(--white);
+  font-size: 3rem;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: #CBD5E1;
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* --- Grids & Cards --- */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #E2E8F0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* --- Split Layout --- */
+.split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.split-layout ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+.split-layout li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.split-layout li::before {
+  content: "→";
+  color: var(--teal);
+  position: absolute;
+  left: 0;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--navy);
+  color: #94A3B8;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #CBD5E1;
+}
+
+footer a:hover {
+  color: var(--white);
+}
