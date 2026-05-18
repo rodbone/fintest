@@ -132,6 +132,13 @@ header {
   font-weight: 800;
   color: var(--navy);
   letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 200px;
+  width: auto;
 }
 
 .nav-links {
