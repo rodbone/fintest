@@ -7,8 +7,10 @@
   --charcoal: #334155;
   --light-grey: #F3F4F6;
   --white: #FFFFFF;
-  --teal: #0D9488;
-  --teal-hover: #0F766E;
+  --primary-blue: #3B82F6;
+  --primary-blue-hover: #2563EB;
+  --accent-orange: #F97316;
+  --accent-orange-hover: #EA580C;
   --text-main: #1E293B;
   --font-stack: 'Inter', system-ui, -apple-system, sans-serif;
 }
@@ -35,7 +37,7 @@ h1, h2, h3, h4 {
 
 a {
   text-decoration: none;
-  color: var(--teal);
+  color: var(--primary-blue);
   transition: color 0.3s ease;
 }
 
@@ -80,12 +82,12 @@ section {
 }
 
 .btn-primary {
-  background-color: var(--teal);
+  background-color: var(--accent-orange);
   color: var(--white);
 }
 
 .btn-primary:hover {
-  background-color: var(--teal-hover);
+  background-color: var(--accent-orange-hover);
   color: var(--white);
 }
 
@@ -102,12 +104,12 @@ section {
 
 .btn-outline {
   background-color: transparent;
-  color: var(--teal);
-  border: 2px solid var(--teal);
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
 }
 
 .btn-outline:hover {
-  background-color: var(--teal);
+  background-color: var(--primary-blue);
   color: var(--white);
 }
 
@@ -153,7 +155,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: var(--teal);
+  color: var(--primary-blue);
 }
 
 /* --- Hero Section --- */
@@ -258,7 +260,7 @@ header {
 
 .split-layout li::before {
   content: "→";
-  color: var(--teal);
+  color: var(--primary-blue);
   position: absolute;
   left: 0;
 }
